@@ -14,6 +14,10 @@ var categories = [{id: 1, name: "smartphone"},
                     {id: 2, name: "tablet"}];
 
 
+app.get('/', (req, res) =>{
+    return res.send('Server is up!');
+});
+
 //END-POINTS FOR DEVICES
 //End-point que retorna a lista dos devices
 app.get('/api/devices', (req, res) =>{
